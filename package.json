@@ -1,0 +1,15 @@
+{
+  "name": "monorepo-vite-component-selector",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "license": "MIT",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "yarn workspace vite-app run dev"
+  },
+  "packageManager": "yarn@3.3.0"
+}

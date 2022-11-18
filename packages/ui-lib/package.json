@@ -1,0 +1,14 @@
+{
+  "name": "ui-lib",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/material": "^5.10.14"
+  },
+  "devDependencies": {
+    "@emotion/babel-plugin": "^11.10.5"
+  }
+}
