@@ -26,6 +26,9 @@ const Button = () => {
 function App() {
   return (
     <div className="App">
+      {/* Works */}
+      <Button />
+      {/* Doesn't work */}
       <UiButton />
     </div>
   );

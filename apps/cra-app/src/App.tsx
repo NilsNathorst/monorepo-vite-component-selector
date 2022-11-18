@@ -1,24 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Button as UiButton } from "ui-lib";
+import { styled } from "@mui/material";
+
+const Child = styled("div")`
+  color: red;
+`;
+
+const Parent = styled("div")`
+  ${Child} {
+    color: green;
+  }
+`;
+// TODO:
+// Add Craco
+// Add @emotion/babel-plugin
+
+const Button = () => {
+  return (
+    <div>
+      <Parent>
+        <Child>Green because I am inside a Parent</Child>
+      </Parent>
+      <Child>Red because I am not inside a Parent</Child>
+    </div>
+  );
+};
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Works */}
+      <Button />
+      {/* Also works */}
+      <UiButton />
     </div>
   );
 }
