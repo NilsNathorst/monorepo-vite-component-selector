@@ -1,6 +1,6 @@
 import "./App.css";
 import { Button as UiButton } from "ui-lib";
-import { styled } from "@mui/material";
+import { styled } from "@mui/material/styles";
 
 const Child = styled("div")`
   color: red;

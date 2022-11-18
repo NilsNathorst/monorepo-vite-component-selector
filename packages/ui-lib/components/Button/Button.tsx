@@ -1,10 +1,10 @@
-import styled from "@emotion/styled";
+import { styled } from "@mui/material/styles";
 
-const Child = styled.div`
+const Child = styled("div")`
   color: red;
 `;
 
-const Parent = styled.div`
+const Parent = styled("div")`
   ${Child} {
     color: green;
   }
