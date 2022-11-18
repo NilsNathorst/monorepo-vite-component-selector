@@ -1,14 +1,12 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
 import "./App.css";
 import { Button as UiButton } from "ui-lib";
-import styled from "@emotion/styled";
+import { styled } from "@mui/material";
 
-const Child = styled.div`
+const Child = styled("div")`
   color: red;
 `;
 
-const Parent = styled.div`
+const Parent = styled("div")`
   ${Child} {
     color: green;
   }
@@ -26,8 +24,6 @@ const Button = () => {
 };
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className="App">
       <Button />
