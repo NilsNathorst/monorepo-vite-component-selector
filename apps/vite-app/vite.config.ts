@@ -20,7 +20,7 @@ export default defineConfig({
                     styledBaseImport: ["@mui/system", "styled"],
                   },
                 },
-                "@mui/material/styles": {
+                "@mui/material": {
                   styled: {
                     canonicalImport: ["@emotion/styled", "default"],
                     styledBaseImport: ["@mui/material/styles", "styled"],

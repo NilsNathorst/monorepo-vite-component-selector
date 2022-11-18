@@ -1,6 +1,6 @@
 import "./App.css";
 import { Button as UiButton } from "ui-lib";
-import { styled } from "@mui/material/styles";
+import { styled } from "@mui/material";
 
 const Child = styled("div")`
   color: red;
@@ -26,7 +26,7 @@ const Button = () => {
 function App() {
   return (
     <div className="App">
-      <Button />
+      <UiButton />
     </div>
   );
 }

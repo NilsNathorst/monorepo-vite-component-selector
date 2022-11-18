@@ -1,4 +1,4 @@
-import { styled } from "@mui/material/styles";
+import { styled } from "@mui/material";
 
 const Child = styled("div")`
   color: red;
