@@ -16,9 +16,9 @@ const Button = () => {
   return (
     <div>
       <Parent>
-        <Child>Green because I am inside a Parent</Child>
+        <Child>Green Vite button</Child>
       </Parent>
-      <Child>Red because I am not inside a Parent</Child>
+      <Child>Green Vite button</Child>
     </div>
   );
 };
