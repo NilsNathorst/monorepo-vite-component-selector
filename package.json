@@ -9,7 +9,8 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "yarn workspace vite-app run dev"
+    "dev:vite": "yarn workspace vite-app run dev",
+    "dev:craco": "yarn workspace craco-app run start"
   },
   "packageManager": "yarn@3.3.0"
 }
